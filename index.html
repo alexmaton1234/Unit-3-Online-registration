@@ -15,34 +15,64 @@
     <h2>Sign up for our newsletter</h2>
     <p>Get the latest news on how your code is doing right in your inbox</p>
   </header>
-</div>>
+</div>
   <body>
 
+    <form action="/thecodereview.com" method="post"></form>
+    <fieldset>
     <div class="container">
-
-<h2>contact information </h2>
-<p>Full Name</p>
-<p>email address</p>
-<p>Phone Number</p>
-<p>Street Adrress </p>
-<p>City</p>
-<p> State</p>
-<p>Zip Code</p>
+      <h2> Contact Information </h2>
+      <label>Full Name</label>
+      <input type="text" id="form-style" name="name" required >
+      <label>email address</label>
+      <input type="text" id="form-style" name="email" required >
+      <label>Phone Number</label>
+      <input type="text" id="form-style" >
+      <label>Street Adrress </label>
+      <input type="text" id="form-style" >
+      <label>City</label>
+      <input type="text" id="form-style" >
+      <label> State</label>
+      <select id="form-style" id = "myList">
+        <option value = "1">State</option>
+        <option value = "2">State</option>
+        <option value = "3">State</option>
+        <option value = "4">State</option>
+      </select>
+      <label>Zip Code</label>
+      <input type="text" id="form-style" >
     </div>
+  </fieldset>
+  </form>
 
 
 
-    <form>
-      <input type="radio" id="HTML News" name="news-type" value="HTML News">
-      <label for="HTML News">HTML News</label><br>
 
-      <input type="radio" id="CSS News" name="news-type" value="CSS News">
-      <label for="CSS News">CSS News</label><br>
 
-     
-      <input type="radio" id="Javascript News" name="news-type" value="Javascript News">
-      <label for="Javascript News">Javascript News</label>
-    </form>
+
+<form>
+<fieldset>
+<h2>Newsletter</h2>
+<p> select the newsletter you would like to recieve</p>
+<input type="radio" id="HTML News" name="news-type" value="HTML News">
+<label for="HTML News">HTML News</label><br>
+<input type="radio" id="CSS News" name="news-type" value="CSS News">
+<label for="CSS News">CSS News</label><br>   
+<input type="radio" id="Javascript News" name="news-type" value="Javascript News">
+<label for="Javascript News">Javascript News</label>
+</fieldset>
+
+<fieldset>
+<p>Newsletter format</p>
+<input type="radio" id="HTML" name="news-format" value="HTML">
+<label for="HTML format">HTML</label><br>
+<input type="radio" id="plain text" name="plain text format" value="plain text">
+<label for="plain text format">Plain text</label><br>   
+
+</fieldset>
+
+
+</form>
 
 
 
