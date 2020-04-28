@@ -1,0 +1,39 @@
+
+
+/* Font styling */
+
+.header h1, h2, p{
+    font-family: 'merriweather';
+    text-align: center;    
+    }
+    
+
+
+/* header Styling*/
+
+.header-style {
+
+padding-top: 20px;
+height: 50px;
+background-color: rgb(5, 5, 46);
+color: white;
+margin: auto;
+}
+
+header h1 {
+
+font-size: 24px;;    
+}
+header h2 {
+font-size: 30px;
+padding-top: 30px;
+padding-bottom: 20px;    
+}
+header p {
+
+color: rgb(156, 159, 161);    
+}
+
+header {
+    border: darkgreen 1px solid;
+}
