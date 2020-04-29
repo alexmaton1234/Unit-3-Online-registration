@@ -4,8 +4,11 @@
 <html>
   <head>
     <title>The Code Review Newsletter</title>
-    <link rel="stylesheet" type = "text/css" href="style.css">
+    <link rel="stylesheet" type= "text/css" href="style.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
 
@@ -33,11 +36,11 @@
       <label>City</label><br>
       <input type="text" id="form-style" >
       <label> State</label><br>
-      <select id="form-style" id = "myList">
-        <option value = "1">State</option>
-        <option value = "2">State</option>
-        <option value = "3">State</option>
-        <option value = "4">State</option>
+      <select id="form-style" id ="myList">
+        <option id="list-style" value = "1">Choose State</option>
+        <option id="list-style"value = "2">Choose State</option>
+        <option id="list-style"value = "3">Choose State</option>
+        <option id="list-style"value = "4">Choose State</option>
       </select>
       <label>Zip Code</label><br>
       <input type="text" id="form-style" >
@@ -49,12 +52,12 @@
 <form>
 <fieldset>
 <legend>Newsletter</legend>
-<p> select the newsletter you would like to recieve</p>
-<input type="radio" id="HTML News" name="news-type" value="HTML News">
+<p> Select the newsletter you would like to recieve</p>
+<input type="checkbox" id="HTML News" name="news-type" value="HTML News">
 <label for="HTML News">HTML News</label><br>
-<input type="radio" id="CSS News" name="news-type" value="CSS News">
+<input type="checkbox" id="CSS News" name="news-type" value="CSS News">
 <label for="CSS News">CSS News</label><br>   
-<input type="radio" id="Javascript News" name="news-type" value="Javascript News">
+<input type="checkbox" id="Javascript News" name="news-type" value="Javascript News">
 <label for="Javascript News">Javascript News</label><br>
 <p>Newsletter format</p>
 <input type="radio" id="HTML" name="news-format" value="HTML">
@@ -62,11 +65,11 @@
 <input type="radio" id="plain text" name="plain text format" value="plain text">
 <label for="plain text format">Plain text</label><br>   
 <p> Other projects you would like to hear about</p>
-<textarea rows="4" cols="40"></textarea>
+<textarea> </textarea>
 </fieldset>
-
-
+<input type="button" class="button" value="Sign Up" disabled>
 </form>
+<p class="copyright">Copyright The Code Review</p>
 
 
 
