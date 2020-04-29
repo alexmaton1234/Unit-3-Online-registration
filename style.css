@@ -17,6 +17,7 @@ font-family: 'merriweather';
 color: rgb(156, 159, 161); 
 font-size: 20px;
 padding-top: 20px;
+font-style: italic;
 
 
 }
@@ -55,7 +56,13 @@ padding-bottom: 20px;
 header {
     border-bottom: black 5px solid;
 }
+.form-line {
 
+border-top: solid black 3px;
+width: 100%;
+margin-top: 5px;
+padding-top: 20px;
+}
 
 /* Top Form Styling*/
 fieldset {
@@ -66,8 +73,9 @@ fieldset {
 .container {
 
  display: flex;
- flex-direction: column;  
+ flex-direction: column; 
 }
+
 .legend h2 {text-align: left;
 padding-top: 20px;
 border-top: 4px solid black;}
@@ -79,7 +87,13 @@ background-color: rgb(211, 211, 211);
 border-radius: 5px;
 border: none;    
 }
-
+#form-style-zip {
+height: 70px;
+background-color: rgb(211, 211, 211);
+border-radius: 5px;
+width: 50%;
+border: none;    
+}
 
 label {
     font-family: 'merriweather';
@@ -92,8 +106,8 @@ label {
 
 /* Bottom Form Styling*/
 
-form p {
-    color: rgb(156, 159, 161); 
+.form-line p {
+    color: rgb(211, 211, 211); 
     width: 100%; 
     margin: auto;
     padding-top: 20px;
@@ -112,12 +126,20 @@ textarea {
     padding: 5px; 
 
 }
-#list-style {
 
-font-size: 20px;
-text-align: center; 
-font-family: 'merriweather';   
-}
+.bottom-form-style {
+    font-size: 20px;
+    text-align: left; 
+    font-family: 'merriweather'; 
+    color: rgb(211, 211, 211); 
+    }
+
+ /* Focus areas */
+
+    textarea:focus {
+        border: 3px solid rgb(7, 119, 122);
+      }
+      
 /* Button Form Styling*/
 
 .button {
@@ -130,5 +152,25 @@ color: white;
 background-color: rgb(8, 160, 160);
 font-family: 'merriweather';
 border: none;
+
+}
+
+/* Media Queries*/
+
+@media (min-width: 768px) {
+
+body {
+
+    max-width: 50%;
+    margin: auto;
+}
+
+.container {
+    display:flex;
+
+
+}
+    
+
 
 }
