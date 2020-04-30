@@ -202,51 +202,32 @@ margin-top: 15px;
 /* Media Queries*/
 
 @media (min-width: 768px) {
-
-
-.flex-pair {
-   flex-direction: row;
-   flex-wrap: nowrap;
-align-self: end;
-justify-content:space-between;
-
-
-}
-
-
-   .flex-pair {
-        width: 99%;
-        max-width: 750px;
-        margin: 5px auto;
-        padding-top: 20px;
-        }
-   
-
-      .form-line {
-        width: 100%;
-        max-width: 750px;
-        margin: 5px auto;
-        padding-top: 20px;
-        
-        }
-
-
-
-        legend {
-            max-width: 750px;
-            margin: auto;
-        }
-        input#name,
-        input#email,
-        input#phone,
-        input#address,
-        input#city,
-        #form-style {
-        width:75%;}
-        
-        input#form-style-zip {
-
-            width: 25%;
-            justify-content: flex-end;
-        }
-}
+    .form-line {
+      width: 100%;
+      max-width: 750px;
+      margin: 5px auto;
+      padding-top: 20px;
+    }
+    legend {
+      max-width: 750px;
+      margin: auto;
+    }
+    .flex-pair {
+      flex-direction: row;
+      align-items: center;
+      margin: 20px auto;
+      width: 100%;
+    }
+    .flex-pair label {
+      flex-basis: 30%;
+      padding: 0;
+    }
+    .flex-pair input,
+    .flex-pair select {
+      flex-basis: 60%;
+      flex-grow: 1;
+    }
+    input#form-style-zip {
+      max-width: 25%;
+    }
+  }
