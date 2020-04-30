@@ -54,14 +54,17 @@ padding-bottom: 20px;
 
 header {
     border-bottom: black 5px solid;
-}
-.form-line {
+    margin: 3px;
+    width: 100%;
 
-border-top: solid black 3px;
-width: 100%;
-margin-top: 5px;
-padding-top: 20px;
 }
+
+    legend {
+         border-top: solid black 3px;
+            width: 100%;
+            margin-top: 3px;
+            padding-top: 20px;
+            padding-bottom: 10px;    }
 
 /* Top Form Styling*/
 fieldset {
@@ -73,27 +76,40 @@ fieldset {
 {
     display: flex;
     flex-direction: column;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
 .legend h2 {text-align: left;
 padding-top: 20px;
-border-top: 4px solid black;}
+border-bottom: 4px solid black;}
 
 
 #form-style {
-height: 70px;
+height: 56px;
 background-color: rgb(211, 211, 211);
 border-radius: 5px;
 width: 100%;
-padding-top: 10px;
-   
+border: 1px solid darkgrey;
+
+
 }
-#form-style-zip {
-height: 70px;
-background-color: rgb(211, 211, 211);
-border-radius: 5px;
-width: 50%;
-   
+
+input#name,
+input#email,
+input#phone,
+input#address,
+input#city,
+input#form-style-zip,
+input#form-style {
+
+    background-color:  rgb(211, 211, 211);
+    height: 50px;
+    border-radius: 4px;
+    font-family: 'merriweather';
+    font-size: 20px;
+    border: 1px solid darkgrey;
+
 }
 
 label {
@@ -164,11 +180,6 @@ border: none;
 
 @media (min-width: 768px) {
 
-body {
-
-    max-width: 50%;
-    margin: auto;
-}
 
 .flex-pair {
     display: flex;

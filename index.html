@@ -1,16 +1,14 @@
-
 <!doctype html>
-<html lang = "en">
-<html>
+<html lang="en">
   <head>
+	<meta charset="utf-8">
     <title>The Code Review Newsletter</title>
     <link rel="stylesheet" type= "text/css" href="style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-
-
+  <body>
 <div class="header">
   <header>
     <h1 class="header-style"> THE CODE REVIEW </h1>
@@ -18,71 +16,69 @@
     <p>Get the latest news on how your code is doing right in your inbox</p>
   </header>
 </div>
-  <body>
+  
 <div class="form-line">                    
-    <form action="/thecodereview.com" method="post">
-    <fieldset>
-    </div>
-    <div class="container">
+<fieldset>
 
-
-      <legend>Contact Information</legend>
+         <legend>Contact Information</legend>
       <div class="flex-pair">
         <label>Full Name</label>
-        <input type="text" id="form-style" name="name" required >
+        <input type="text" id="name" name="name" required >
       </div>
       <div class="flex-pair">
         <label>Email address</label>
-        <input type="email" id="form-style" name="email" required >
+        <input type="email" id="email" name="email" required >
       </div>
       <div class="flex-pair">
         <label>Phone Number</label>
-        <input type="tel" id="form-style" name="phone" optional >
+        <input type="tel" id="phone" name="phone" required >
       </div>
       <div class="flex-pair">   
         <label>Street Adrress </label>
-        <input type="text" id="form-style" name="street" optional>
+        <input type="text" id="address" name="street" required>
       </div>
       <div class="flex-pair">  
       <label>City</label>
-      <input type="text" id="form-style" name="city" optional>
+      <input type="text" id="city" name="city" required>
       </div>
       <div class="flex-pair">  
       <label> State</label>
-      <select id="form-style" id ="myList" name="state" optional>
-        <option id="list-style" value = "1">Choose State</option>
-        <option id="list-style"value = "2">Choose State</option>
-        <option id="list-style"value = "3">Choose State</option>
-        <option id="list-style"value = "4">Choose State</option>
+      <select id="form-style" name="state" required>
+        <option id="state1" value = "">Choose State</option>
+        <option id="state2" value = "">Choose State</option>
+        <option id="state3" value = "">Choose State</option>
+        <option id="state4" value = "">Choose State</option>
       </select>
     </div>
     <div class="flex-pair">
       <label>Zip Code</label>
-      <input type="text" id="form-style-zip" name="zip" optional >
-    </div>
-    </div>
-  </fieldset>
-<fieldset>
-<div class="form-line" >
-<legend>Newsletter</legend>
+      <input type="text" id="form-style-zip" name="zip" required >
+    	</fieldset>
+	</div>
+	
+	
+	<fieldset>
+	<legend>Newsletter</legend>
+<div class="form-line">
+
 <p> Select the newsletter you would like to recieve</p>
-<input type="checkbox" id="bottom-form-style" name="news-type" value="HTML News">
-<label for="HTML News">HTML News</label><br>
-<input type="checkbox" id="bottom-form-style" name="news-type" value="CSS News">
-<label for="CSS News">CSS News</label><br>   
-<input type="checkbox" id="bottom-form-style" name="news-type" value="Javascript News">
-<label for="Javascript News">Javascript News</label><br>
+<input type="checkbox" id="html-news" name="news-type" value="HTML News">
+<label for="html-news">HTML News</label><br>
+<input type="checkbox" id="css-news" name="news-type" value="CSS News">
+<label for="css-news">CSS News</label><br>   
+<input type="checkbox" id="javascript-news" name="news-type" value="Javascript News">
+<label for="javascript-news">Javascript News</label><br>
 <p>Newsletter format</p>
-<input type="radio" id="bottom-form-style radio" name="HTML format" value="HTML">
-<label for="HTML format">HTML</label><br>
-<input type="radio" id="bottom-form-style radio" name="plain text format" value="plain text">
-<label for="plain text format">Plain text</label><br>   
+<input type="radio" id="html" name="HTML format" value="HTML">
+<label for="html">HTML</label><br>
+<input type="radio" id="plain-text" name="plain text format" value="plain text">
+<label for="plain-text">Plain text</label><br>   
 <p> Other projects you would like to hear about</p>
 <textarea> </textarea>
-</fieldset>
 <input type="button" class="button" value="Sign Up" disabled>
-</div>
-</form>
+	</div>	
+	</fieldset>
+
 <p class="copyright">Copyright The Code Review</p>
   </body>
 </html>
