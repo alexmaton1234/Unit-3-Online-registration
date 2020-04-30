@@ -21,7 +21,6 @@ font-style: italic;
 
 
 }
-    
 
 
 /* header Styling*/
@@ -70,10 +69,10 @@ fieldset {
 }
 
 
-.container {
-
- display: flex;
- flex-direction: column; 
+.flex-pair
+{
+    display: flex;
+    flex-direction: column;
 }
 
 .legend h2 {text-align: left;
@@ -85,14 +84,16 @@ border-top: 4px solid black;}
 height: 70px;
 background-color: rgb(211, 211, 211);
 border-radius: 5px;
-border: none;    
+width: 100%;
+padding-top: 10px;
+   
 }
 #form-style-zip {
 height: 70px;
 background-color: rgb(211, 211, 211);
 border-radius: 5px;
 width: 50%;
-border: none;    
+   
 }
 
 label {
@@ -136,9 +137,13 @@ textarea {
 
  /* Focus areas */
 
-    textarea:focus {
-        border: 3px solid rgb(7, 119, 122);
-      }
+   /* Focus areas */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    border: 3px solid rgb(7, 119, 122);
+}
       
 /* Button Form Styling*/
 
@@ -165,12 +170,14 @@ body {
     margin: auto;
 }
 
-.container {
-    display:flex;
-
-
-}
+.flex-pair {
+    display: flex;
+    flex-direction: row;
     
+  }
+
+
+   
 
 
 }

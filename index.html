@@ -7,7 +7,6 @@
     <link rel="stylesheet" type= "text/css" href="style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
-    
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
@@ -25,26 +24,42 @@
     <fieldset>
     </div>
     <div class="container">
+
+
       <legend>Contact Information</legend>
-      <label>Full Name</label><br>
-      <input type="text" id="form-style" name="name" required >
-      <label>Email address</label><br>
-      <input type="email" id="form-style" name="email" required >
-      <label>Phone Number</label><br>
-      <input type="tel" id="form-style" name="phone" optional >
-      <label>Street Adrress </label><br>
-      <input type="text" id="form-style" name="street" optional>
-      <label>City</label><br>
+      <div class="flex-pair">
+        <label>Full Name</label>
+        <input type="text" id="form-style" name="name" required >
+      </div>
+      <div class="flex-pair">
+        <label>Email address</label>
+        <input type="email" id="form-style" name="email" required >
+      </div>
+      <div class="flex-pair">
+        <label>Phone Number</label>
+        <input type="tel" id="form-style" name="phone" optional >
+      </div>
+      <div class="flex-pair">   
+        <label>Street Adrress </label>
+        <input type="text" id="form-style" name="street" optional>
+      </div>
+      <div class="flex-pair">  
+      <label>City</label>
       <input type="text" id="form-style" name="city" optional>
-      <label> State</label><br>
+      </div>
+      <div class="flex-pair">  
+      <label> State</label>
       <select id="form-style" id ="myList" name="state" optional>
         <option id="list-style" value = "1">Choose State</option>
         <option id="list-style"value = "2">Choose State</option>
         <option id="list-style"value = "3">Choose State</option>
         <option id="list-style"value = "4">Choose State</option>
       </select>
-      <label>Zip Code</label><br>
+    </div>
+    <div class="flex-pair">
+      <label>Zip Code</label>
       <input type="text" id="form-style-zip" name="zip" optional >
+    </div>
     </div>
   </fieldset>
 <fieldset>
