@@ -104,7 +104,8 @@ input#phone,
 input#address,
 input#city,
 input#form-style-zip,
-input#form-style {
+input#form-style,
+option{
 
     background-color:  rgb(211, 211, 211);
     height: 50px;
@@ -130,7 +131,7 @@ label {
     color: rgb(211, 211, 211); 
     width: 100%; 
     margin: auto;
-    padding-top: 20px;
+    padding-top: 0px;
     padding-bottom: 20px;
     text-align: left;
     font-size: 20px;
@@ -176,7 +177,10 @@ color: white;
 background-color: rgb(8, 160, 160);
 font-family: 'merriweather';
 border: none;
+}
 
+input.button {
+margin-top: 15px;
 }
 
 /* Media Queries*/
@@ -185,7 +189,14 @@ border: none;
 
 
 .flex-pair {
-   display: flex;}
+   flex-direction: row;
+   flex-wrap: nowrap;
+align-self: end;
+justify-content:space-between;
+
+
+}
+
 
    .flex-pair {
         width: 99%;
@@ -201,7 +212,19 @@ border: none;
         margin: 5px auto;
         padding-top: 20px;
         }
-   
 
 
+
+        legend {
+            max-width: 750px;
+            margin: auto;
+        }
+        input#name,
+        input#email,
+        input#phone,
+        input#address,
+        input#city,
+        input#form-style-zip,
+        #form-style {
+        width:75%;}        
 }
