@@ -68,10 +68,19 @@ header {
 
 /* Top Form Styling*/
 fieldset {
-	border: none;
+    border: none;
+    background-color: rgb(241, 241, 241);
+    max-width: 750px;
+    margin: auto;
 }
 
+::placeholder{
 
+text-align: right;
+padding-right: 20px;
+font-style: italic; 
+
+}
 .flex-pair
 {
     display: flex;
