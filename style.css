@@ -84,7 +84,10 @@ fieldset {
 padding-top: 20px;
 border-bottom: 4px solid black;}
 
+input#form-style-zip {
 
+    width: 50%;
+}
 #form-style {
 height: 56px;
 background-color: rgb(211, 211, 211);
@@ -182,12 +185,22 @@ border: none;
 
 
 .flex-pair {
-    display: flex;
-    flex-direction: row;
-    
-  }
+   display: flex;}
 
+   .flex-pair {
+        width: 99%;
+        max-width: 750px;
+        margin: 5px auto;
+        padding-top: 20px;
+        }
+   
 
+      .form-line {
+        width: 99%;
+        max-width: 750px;
+        margin: 5px auto;
+        padding-top: 20px;
+        }
    
 
 
